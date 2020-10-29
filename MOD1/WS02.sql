@@ -1,6 +1,7 @@
-# Sesión 02: Fundamentos de SQL
+## Sesión 02: Agrupaciones y subconsultas
 USE tienda;
-# Uso de LIKE
+
+## Uso de LIKE
 
 SELECT * 
 FROM empleado 
@@ -44,7 +45,7 @@ SELECT nombre
 FROM puesto
 WHERE LOWER(nombre) LIKE '%developer%';
 
-# Funciones de agrupamiento
+## Funciones de agrupamiento
 
 SELECT (1+7)*(10/(6-4));
 SELECT AVG(precio) AS avg_precio FROM articulo;
