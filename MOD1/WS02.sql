@@ -23,27 +23,27 @@ WHERE nombre LIKE 'M_losa';
 # ¿Qué artículos incluyen la palabra Pasta en su nombre?
 SELECT * 
 FROM articulo
-WHERE LOWER(nombre) LIKE '%pasta%';
+WHERE nombre LIKE '%Pasta%';
 
 # ¿Qué artículos incluyen la palabra Cannelloni en su nombre?
 SELECT * 
 FROM articulo
-WHERE LOWER(nombre) LIKE '%cannelloni%';
+WHERE nombre LIKE '%Cannelloni%';
 
 # ¿Qué nombres están separados por un guión (-) por ejemplo Puree - Kiwi?
 SELECT nombre 
 FROM articulo
-WHERE LOWER(nombre) LIKE '%-%';
+WHERE nombre LIKE '%-%';
 
 # ¿Qué puestos incluyen la palabra Designer?
 SELECT nombre 
 FROM puesto
-WHERE LOWER(nombre) LIKE '%designer%';
+WHERE nombre LIKE '%Designer%';
 
 # ¿Qué puestos incluyen la palabra Developer?
 SELECT nombre
 FROM puesto
-WHERE LOWER(nombre) LIKE '%developer%';
+WHERE nombre LIKE '%Developer%';
 
 ## Funciones de agrupamiento
 
@@ -62,7 +62,7 @@ FROM puesto;
 # ¿Cuántos artículos incluyen la palabra Pasta en su nombre?
 SELECT COUNT(*) AS n_pasta
 FROM articulo
-WHERE LOWER(nombre) LIKE '%pasta%';
+WHERE nombre LIKE '%Pasta%';
 
 # ¿Cuál es el salario mínimo y máximo?
 SELECT MIN(salario) AS min_salario, 
